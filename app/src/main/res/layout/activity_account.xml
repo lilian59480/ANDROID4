@@ -1,0 +1,92 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AccountLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.AccountActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_account_username_field_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/keyline_2"
+        android:layout_marginTop="@dimen/keyline_2"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_account_username_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_field"
+            android:inputType="text">
+
+            <requestFocus />
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_account_password_field_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/keyline_2"
+        app:layout_constraintEnd_toEndOf="@+id/activity_account_username_field_layout"
+        app:layout_constraintStart_toStartOf="@+id/activity_account_username_field_layout"
+        app:layout_constraintTop_toBottomOf="@+id/activity_account_username_field_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_account_password_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_field"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_account_colours_field_layout"
+        style="@style/Widget.AppTheme.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/keyline_2"
+        android:hint="@string/colour"
+        app:layout_constraintEnd_toEndOf="@+id/activity_account_password_field_layout"
+        app:layout_constraintStart_toStartOf="@+id/activity_account_password_field_layout"
+        app:layout_constraintTop_toBottomOf="@+id/activity_account_password_field_layout">
+
+        <AutoCompleteTextView
+            android:id="@+id/activity_account_colours_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="Deprecated" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/activity_account_validation_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/keyline_2"
+        android:text="@string/submit_field"
+        app:layout_constraintEnd_toEndOf="@+id/activity_account_colours_field_layout"
+        app:layout_constraintStart_toStartOf="@+id/activity_account_colours_field_layout"
+        app:layout_constraintTop_toBottomOf="@+id/activity_account_colours_field_layout" />
+
+    <ProgressBar
+        android:id="@+id/activity_account_progress_bar"
+        style="@style/Widget.AppTheme.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/keyline_2"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/activity_account_validation_field"
+        app:layout_constraintStart_toStartOf="@+id/activity_account_validation_field"
+        app:layout_constraintTop_toBottomOf="@+id/activity_account_validation_field" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="fr.ig2i.chat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".IG2IChatApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.DayNight"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:label="@string/title_activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.ListChatActivity"
+            android:label="@string/title_activity_choice_conversation" />
+        <activity
+            android:name=".view.activity.AccountActivity"
+            android:label="@string/title_activity_account" />
+        <activity
+            android:name=".view.activity.ShowChatActivity"
+            android:label="@string/title_activity_show_conversation" />
+        <activity
+            android:name=".view.activity.SettingsActivity"
+            android:label="@string/title_activity_preferences" />
+    </application>
+
+</manifest>

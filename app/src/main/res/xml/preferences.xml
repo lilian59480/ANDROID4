@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/preference_remember_key"
+        android:summary="@string/preference_remember_summary"
+        android:title="@string/preference_remember_title" />
+
+    <PreferenceCategory
+        android:key="@string/preference_credentials_key"
+        android:summary="@string/preference_credentials_summary"
+        android:title="@string/preference_credentials_title">
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="@string/preference_credentials_username_key"
+            android:summary="@string/preference_credentials_username_summary"
+            android:title="@string/preference_credentials_username_title" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="@string/preference_credentials_password_key"
+            android:summary="@string/preference_credentials_password_summary"
+            android:title="@string/preference_credentials_password_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/preference_networking_key"
+        android:summary="@string/preference_networking_summary"
+        android:title="@string/preference_networking_title">
+        <EditTextPreference
+            android:defaultValue="http://10.0.0.1/"
+            android:key="@string/preference_networking_url_key"
+            android:summary="@string/preference_networking_url_summary"
+            android:title="@string/preference_networking_url_title" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="@string/preference_debugging_key"
+        android:summary="@string/preference_debugging_summary"
+        android:title="@string/preference_debugging_title">
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="@string/preference_credentials_token_key"
+            android:summary="@string/preference_credentials_token_summary"
+            android:title="@string/preference_credentials_token_title" />
+        <fr.ig2i.chat.manager.IntEditTextPreference
+            android:defaultValue="-1"
+            android:key="@string/preference_debug_userid_key"
+            android:numeric="integer"
+            android:summary="@string/preference_debug_userid_summary"
+            android:title="@string/preference_debug_userid_title" />
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

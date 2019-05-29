@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IAM Chat</string>
+    <string name="action_settings">Preferences</string>
+    <string name="action_account">My Account</string>
+    <string name="username_field">Username</string>
+    <string name="password_field">Password</string>
+    <string name="submit_field">Submit</string>
+    <string name="colour">Preferred color</string>
+    <string name="remember_field">Remember me</string>
+    <string name="title_activity_preferences">Preferences</string>
+    <string name="title_activity_account">Account</string>
+    <string name="title_activity_choice_conversation">Conversation list</string>
+    <string name="title_activity_show_conversation">Conversation</string>
+
+    <string-array name="colors">
+        <item>red</item>
+        <item>green</item>
+        <item>blue</item>
+    </string-array>
+
+    <string name="title_activity_login">@string/app_name</string>
+    <string name="fragment_conversation_icon">Activity icon</string>
+    <string name="network_error">Network error</string>
+    <string name="no_network">No connectivity</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="preference_remember_key" translatable="false">pref_remember</string>
+    <string name="preference_remember_title">Remember login credentials</string>
+    <string name="preference_remember_summary">Enables credentials storage. There are stored in plain text so please enable it at your own risk.</string>
+
+    <string name="preference_credentials_key" translatable="false">pref_credentials</string>
+    <string name="preference_credentials_title">Credential management</string>
+    <string name="preference_credentials_summary">Manages credentials and tokens.</string>
+
+    <string name="preference_credentials_username_key" translatable="false">pref_username</string>
+    <string name="preference_credentials_username_title">Username</string>
+    <string name="preference_credentials_username_summary">Username stored. Modify it and you risk app crash.</string>
+
+    <string name="preference_credentials_password_key" translatable="false">pref_password</string>
+    <string name="preference_credentials_password_title">Password</string>
+    <string name="preference_credentials_password_summary">Password stored. Yes in plain text. This is only for debugging.</string>
+
+    <string name="preference_credentials_token_key" translatable="false">pref_token</string>
+    <string name="preference_credentials_token_title">Token</string>
+    <string name="preference_credentials_token_summary">Token stored. Mandatory or you can\'t access data. Modify it and you risk app crash.</string>
+
+    <string name="preference_networking_key" translatable="false">pref_networking</string>
+    <string name="preference_networking_title">Networking</string>
+    <string name="preference_networking_summary">Manages networking.</string>
+
+    <string name="preference_networking_url_key" translatable="false">pref_url</string>
+    <string name="preference_networking_url_title">Server URL</string>
+    <string name="preference_networking_url_summary">Change the server here. Must end with a /</string>
+
+    <string name="preference_debugging_key" translatable="false">pref_debug</string>
+    <string name="preference_debugging_title">Debugging</string>
+    <string name="preference_debugging_summary">Preferences stored but should never be modifier by the user.</string>
+
+    <string name="preference_debug_userid_key" translatable="false">pref_userid</string>
+    <string name="preference_debug_userid_title">External user id</string>
+    <string name="preference_debug_userid_summary">@string/preference_debug_userid_key</string>
+    <string name="message_field">Message</string>
+</resources>
